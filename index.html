@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #prompt {
+            background-color: #1f2534;
+            color: #fff;
+            width: 349px;
+            height: 40px;
+            border-radius: 7px;
+        }
+        
+        #prompt::placeholder {
+            color: #777;
+            text-shadow: 1px 1px 2px #333;
+        }
+        /* Add dark mode style for body */
+        
+        body {
+            background-color: #3e3e48;
+            color: #fff;
+        }
+        /* Add dark mode style for input field and button */
+        
+        input[type="text"] {
+            background-color: #333;
+            border: 1px solid #444;
+            color: #fff;
+        }
+        
+        button {
+            background-color: #c5bc4f;
+            border-radius: 7px;
+            border: 1px solid #444;
+            color: #fff;
+            width: 180px;
+            height: 40px;
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+            border-color: #c5bc4f;
+            border-top-color: rgb(197, 188, 79);
+            border-right-color: rgb(197, 188, 79);
+            border-bottom-color: rgb(197, 188, 79);
+            border-left-color: rgb(197, 188, 79);
+        }
+        
+        #image-container img {
+            width: 30%;
+            /* Adjust this value to control the size of the image */
+            display: block;
+            margin: 0 auto;
+        }
+        
+        select option {
+            /* Add your styles here */
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+
+</head>
+
+<body>
+    <center>
+        <h1>Image Generator (Using Ai)</h1>
+        <p>Select an option and enter a prompt, then click the "Generate" button to generate an image:</p>
+
+        <input type="text" id="prompt" placeholder="Enter a prompt and click Generate!">
+        <select id="options">
+            <option value="option1">Anime</option>
+            <option value="option2">Real</option>
+          </select>
+        <pre>
+        <button id="generate-button">Generate!</button>
+        </pre>
+        <br><br>
+        <div id="image-container">
+            <!-- Image will be displayed here -->
+        </div>
+    </center>
+    <script src="jsfiles/main.js"></script>
+</body>
+
+</html>
